@@ -2,18 +2,21 @@ const listaPokemons =[
     {
         "nome": "BULBASAUR",
         "pokenumero": 1,
+        "tipo": ["planta", "venenoso"],
         "basico": true,
         "desvantagem": ["fogo", "psíquico", "voador", "gelo"]
     },
     {
         "nome": "SCYTHER",
         "pokenumero": 123,
+        "tipo": ["inseto", "voador"],
         "basico": true,
         "desvantagem": ["fogo", "voador", "elétrico", "gelo", "pedra"]
     },
     {
         "nome": "GYRADOS",
         "pokenumero": 130,
+        "tipo": ["água", "voador"],
         "basico": false,
         "desvantagem": ["elétrico", "pedra"]
     }
@@ -71,25 +74,25 @@ const listaPokemons =[
     //ATIVIDADE 4
     console.log("### Atividade 4 ###")
     
-    const titulo = prompt("Digite o nome de um dos três pokemons: Scyther, Bulbasaur, Gyrados.")
+    const titulo = prompt("Digite o nome de um dos três pokemons: Scyther, Bulbasaur, Gyrados.").toLowerCase()
     
     function recebeObjetosString (listaObjetos, titulo){
         let novoArray = []
-        for(let item of listaObjetos){
-            for(let chave in item){
-                if(item[chave] === titulo.toUpperCase()){
-                    console.log(`Nome do pokemon: ${item[chave]}`)
-                    novoArray.push(item)
+        // for(let item of listaObjetos){
+            for(let pokemon of listaObjetos){
+                if(pokemon.nome.includes(titulo)){
+                    console.log(`Nome do pokemon: ${pokemon.nome}`)
+                    novoArray.push(pokemon)
                 } 
             } 
-    
-        } 
         if(novoArray.length < 1){
             alert("Nenhum item foi encontrado.")
             console.log("Nenhum item foi encontrado.")
         }
         
-        return novoArray[0]
+        return novoArray
     }
     
     console.log(recebeObjetosString(listaPokemons, titulo))
+
+    //=== titulo.toUpperCase()//
