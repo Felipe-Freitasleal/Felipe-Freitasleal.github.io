@@ -74,7 +74,7 @@ const listaPokemons =[
     //ATIVIDADE 4
     console.log("### Atividade 4 ###")
     
-    const titulo = prompt("Digite o nome de um dos três pokemons: Scyther, Bulbasaur, Gyrados.").toLowerCase()
+    const titulo = prompt("Digite o nome de um dos três pokemons: Scyther, Bulbasaur, Gyrados.").toUpperCase()
     
     function recebeObjetosString (listaObjetos, titulo){
         let novoArray = []
