@@ -1,3 +1,4 @@
+///// LISTA DE POKEMONS
 const listaPokemons =[
     {
         "nome": "BULBASAUR",
@@ -65,8 +66,7 @@ const listaPokemons =[
     }
     ]
 
-///////////  CRIAR OS POKEMONS NA TELA
-
+///////////  RENDERIZAR OS POKEMONS NA TELA
 function criarPokemon(pokemon){
     const pokemonNovo = document.createElement("article");
     pokemonNovo.setAttribute("class", "pokemon-listado");
@@ -115,6 +115,19 @@ for(pokemon of listaPokemons){
     criarPokemon(pokemon)
 }
 
+/////// MOSTRA A MÉDIA DO POKÉNUMERO DE TODOS OS POKEMONS
+let mediaPokemon = [0]
+
+for(pokemon of listaPokemons){
+    let somar = pokemon.pokenumero + mediaPokemon[0]
+    mediaPokemon = []
+    mediaPokemon.push(somar)
+    console.log(`Pokénúmero total com o de ${pokemon.nome}: ${mediaPokemon}`)
+}
+
+console.log(`Média dos Pokénúmeros : ${mediaPokemon / 2}`)
+
+//////// "FOR" PARA RENDERIZAR O(S) POKEMON(S) PESQUISADO(S) POR CADA LETRO DO NOME
 function recebeObjetosString (listaPokemons, event){
     event.preventDefault();
     const limparLista = document.getElementById("lista-pokemon");
