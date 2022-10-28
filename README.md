@@ -1,6 +1,15 @@
 # Projeto de Introdução ao desenvolvimento web
 
-Esse é o projeto de introdução aos fundamentos do desenvolvimento Web. Aqui, vamos praticar a estrutura do que faremos pelo curso todo. O objetivo é construir uma página estilizada, e com **lista** e **busca** utilizando manipulação de DOM, praticando o conteúdo do módulo com JS:
+   Este projeto teve como tema Pokémons. Nele o usuário pode buscar por qualquer caractere pelo input, isso fará renderizar na tela todos os pokémons que, em seu nome, tem incluído o caractere. Para isso foi usado o método ".includes()"que verifica se o caractere em questão está incluído no nome do pokémon. 
+
+   O mecanismo de busca é acionado pelo botão "Buscar". 
+
+   Caso nenhum pokémon tenha incluso em seu nome o caractere que foi posto no input, um "alert" será acionada avisando ao usuário que nenhum pokémon foi encontrado.
+   
+   Caso o usuário deseje retornar ao estado inicial da busca, basta acionar o botão "Limpar busca", que voltará ao estado inicial da página.
+
+
+<!-- Esse é o projeto de introdução aos fundamentos do desenvolvimento Web. Aqui, vamos praticar a estrutura do que faremos pelo curso todo. O objetivo é construir uma página estilizada, e com **lista** e **busca** utilizando manipulação de DOM, praticando o conteúdo do módulo com JS:
 
 - Variáveis
 - Operadores
@@ -13,9 +22,9 @@ Esse é o projeto de introdução aos fundamentos do desenvolvimento Web. Aqui, 
 - Funções de Array
 - HTML e CSS
 - Flex e Grid
-- DOM e responsividade
+- DOM e responsividade -->
 
-## Enunciado
+<!-- ## Enunciado
 
 A página consiste em um HTML, ligado a um ou mais arquivos CSS, e um ou mais arquivos JS (recomendamos apenas um de cada, no entanto). O objetivo é conseguir criar uma página estática, depois estilizada, e por fim, dinâmica. A página vai catalogar (ou listar) itens que você escolher, e deve possuir um sistema simples de busca, que recebe um texto, e procura por nomes/títulos que correspondam a este texto.
 
@@ -59,4 +68,4 @@ A página consiste em um HTML, ligado a um ou mais arquivos CSS, e um ou mais ar
     </details>
 - Entregue o **link do repo** no [Formulário de entrega](https://forms.gle/Q1mXTJFxwVUgUnrZA).
 
-**Opcional**: Tente utilizar o **Github pages** para fazer o deploy do seu projeto.
+**Opcional**: Tente utilizar o **Github pages** para fazer o deploy do seu projeto. -->
